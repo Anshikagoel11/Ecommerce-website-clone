@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root {
+    --main-bg-color: rgb(100, 149, 237);
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+
+}
+body{
+    background-color: rgb(246, 246, 236);
+   
+}
+main{
+    height: 220vh;
+}
+/* header{
+    background-color: var(--main-bg-color);
+
+    either give height to ul or do this with nav to center the home ,contact,about vertically in header
+    display: flex;
+    height: 50px;
+   align-items: center;
+} */
+nav{
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg-color);
+overflow: scroll;
+
+    
+}
+nav ul li{
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    font-family: "Source Sans 3", sans-serif;
+    &:hover{
+        color:black;
+        scale: 1.4;
+        /* box-shadow: 0px 0px 1px 0px silver; */
+        font-size: large;
+    }
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.logo{
+   display: flex;
+   align-items: center;
+   float: left;
+ 
+}
+.logo img{
+    padding: 0 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    background-color: white;
+    border-radius: 30px;
+    height: 37px; 
+}
+.search input{
+    height: 1.5vh;
+    width: 100%;
+    border: 5px solid white;
+    /* position: absolute; */
+   margin: 0 20px;
+    border: none; 
+    outline: none;
+}
+.search i{
+    padding-left: 15px;
+}
+.login-box{
+    height:22px ;
+    width: 22px;
+    /* background-color: var(--main-bg-color); */
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 380px;
+
+}
+.login-box i{
+    color: white;
+    margin: 10px;
+}
+.login{
+    color: white;
+    margin: 8px;
+    &:hover{
+        text-decoration: underline black;
+        scale: 1.1;
+    }
+}
+ 
+.products-variety-cart{
+    height:150px;
+    background-color: white;
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    /* overflow: scroll; */
+
+}
+.variety img{
+ height: 12vh;
+  display: block;
+  outline: none;
+  &:hover{
+    scale: 1.1;
+
+  }
+
+}
+.variety{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+    margin: 16px ;
+    background-color: white;
+    height: 14vh;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.slider{
+    height: 310px;
+    width: 99%;
+    margin: 20px 22px 10px 15px;
+    background-image: url("https://www.decorpot.com/images/500618969Living-Room-Furniture-Essentials_Main.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+    animation: slide 20s  infinite ;
+    /* overflow: hidden; */
+}
+@keyframes slide {
+    0%{
+        background-image: url("https://www.decorpot.com/images/500618969Living-Room-Furniture-Essentials_Main.jpg");
+    }
+    20%{
+        background-image: url( "https://media.timeout.com/images/103399519/image.jpg" );
+    }
+    40%{
+       background-image: url("https://previews.123rf.com/images/denisfilm/denisfilm1603/denisfilm160300838/55415121-different-shoes-laying-on-floor-lady-s-footwear-on-wooden-background-mess-on-shoe-store-s-floor.jpg");
+    }
+    60%{
+       background-image: url("https://i.ytimg.com/vi/As4EjLgylBc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCEbMUfIsNhk1ksUdsEPb_0aK3UuA" );
+    }
+    80%{
+        background-image: url( "https://i2-prod.mirror.co.uk/incoming/article10763492.ece/ALTERNATES/s1200/Inside-A-Tesco-Plc-Supermarket-As-Shoppers-Prepare-For-Christmas.jpg");
+    }
+    100%{
+        background-image: url("https://jooinn.com/images/electronic-device-1.jpg" 
+"https://shoppiko.com/image/BUSINESS/new-images/gifting.jpg");
+    }
+    
+}
+.items{
+    background-color: white;
+    height: 240px;
+    width: 100%;
+    margin: 25px 20px 10px 20px;
+    background-color: white;
+    /* overflow: scroll; */
+}
+h2{
+    margin: 10px 0px 10px 18px;
+    padding:  15px 0px 10px 18px;
+}
+.items-cart{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 25vh;
+    width: 100%;
+}
+.photos{
+        display: block;
+        margin: 16px ;
+        background-color: white;
+        height: 22vh;
+        width: 14vw;
+        border: none;
+        border-radius: 4px;
+}
+.photos img{
+    height: 11vh;
+    width: 16vw;
+    &:hover{
+        scale: 1.1;
+    }
+}
+.text-center{
+    text-align: center;
+    &:hover{
+        color: rgb(38, 136, 221);
+    }
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 12vh;
+}
