@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+
+}
+.logo{
+    float: left;
+    margin-left: 1rem;
+    padding: 5px ;
+    font-size: large;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(205, 96, 57);
+ }
+
+.nav-items{
+    margin: 0px 1rem;
+    cursor: pointer;
+ }
+nav{
+    display: flex;
+    align-items: center;
+    background-color:rgb(255, 166, 0);
+    cursor: pointer;
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: navy;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-family: "Source Sans 3", sans-serif;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color:black;
+        background-color: rgb(205, 96, 57);
+        scale: 1.4;
+        font-size: large;
+    }
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    background-color: white;
+    border-radius: 30px;
+    height: 37px; 
+    cursor: pointer;
+}
+.search input{
+    height: 35px;
+    width:50%;
+   margin: 0 20px;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+}
+.search i{
+    padding-left: 15px;
+    cursor: pointer;
+}
+.login-box{
+    height:22px ;
+    width: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+float:end;
+color:navy;
+cursor: pointer;
+padding: 1rem;
+
+}
+
+.slider{
+    height: 35vh;
+    width: 100%;
+    margin: 20px 22px 10px 15px;
+    animation: slide 20s infinite ;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0%{
+        background-image:url(img/clothstore.jpg)
+    }
+    20%{
+        background-image: url(img/footwear.jpg);
+    }
+    40%{
+       background-image: url(img/gold.jpg);
+    }
+    60%{
+       background-image: url(img/homedecor.jpg);
+    }
+    80%{
+        background-image: url(img/mart.webp);
+    }
+    100%{
+        background-image: url(img/gold.jpg);
+    }
+    
+}
+.slider-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+.img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.products-variety-cart{
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    cursor: pointer;
+}
+
+.variety{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+    margin: 12px ;
+    height: 140px;
+    width: 140px;
+    cursor: pointer;
+}
+.variety-text{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px ;
+    background-color: #fab162;
+    transition: 0.1s ease-in-out;
+    &:hover{
+        scale: 1.05;
+    }
+}
+
+.size{
+    width: 140px;
+    height: 100px;
+}
+
+/* variety images*/
+.men{
+    background-image: url(img/menswear.jpg);
+}
+.grocery{
+    background-image: url(img/grccery.jpg);
+}
+.women{
+    background-image: url(img/womenwear.jpg);
+}
+.foot{
+    background-image: url(img/shoes.jpg);
+}
+.elec{
+    background-image: url(img/electronics.jpg);
+}
+.jew{
+    background-image: url(img/jwellery.jpg);
+}
+.stat{
+    background-image: url(img/stationary.png);
+}
+.toys{
+    background-image: url(img/toys.jpg);
+}
+.travel{
+    background-image: url(img/travel.webp);
+}
+
+.heading{
+background-color: #efb871;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    height: 45px;
+    
+}
+h2{
+    margin: 10px 0px 10px 18px;
+    padding:  15px 0px 10px 18px;   
+}
+.text{
+    width: 100%;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.items{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      margin-right: 15px ;
+      height: 150px;
+      width: 150px;
+}
+.items-container{
+    margin:2rem 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    overflow: scroll;
+}
+
+/* items images */
+.sizee{
+    width: 200px;
+    height: 120px;
+}
+.watch{
+    background-image: url(img/watch.jpg);
+}
+.camera{
+    background-image: url(img/camera.jpg);
+}
+.speaker{
+    background-image: url(img/speaker.avif);
+}
+.monitor{
+    background-image: url(img/monitor.jpg);
+}
+.headphone{
+    background-image: url(img/headphones.jpg);
+}
+.charger{
+    background-image: url(img/chargers.jpg);
+}
+.nb{
+    background-image: url(img/nb.jpg);
+}
+.color{
+    background-image: url(img/colors.png);
+}
+.bag{
+    background-image: url(img/bags.avif);
+}
+.bottle{
+    background-image: url(img/bottles.webp);
+}
+.table{
+    background-image: url(img/table.webp);
+}
+.lunch{
+    background-image: url(img/lunch.avif);
+}
+.namkeen{
+    background-image: url(img/namkeen.png);
+}
+.biscuit{
+    background-image: url(img/biscuit.jpg);
+}
+.tea{
+    background-image: url(img/tea.jpg);
+}
+.juice{
+    background-image: url(img/juice.jpg);
+}
+.noodles{
+    background-image: url(img/maggi.png);
+}
+.Treadmill{
+    background-image: url(img/ex.bikes.webp);
+}
+.micks{
+    background-image: url(img/micks.jpg);
+}
+.protein{
+    background-image: url(img/protien.jpeg);
+}
+.Strings{
+    background-image: url(img/instruments.jpg);
+}
+.dryfruit{
+    background-image: url(img/dryfruit.jpeg);
+}
+.gym{
+    background-image: url(img/gym.avif);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
